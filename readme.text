@@ -1,0 +1,34 @@
+
+mutation createTodo {
+  createTodo(
+    title: "Clean the kitchen",
+    description: "Wipe down counters, mop the floor"
+  ) {
+    todo {
+      id
+      title
+      description
+      done
+    }
+  }
+}
+
+mutation updateTodo {
+  updateTodo(id: 1
+    title: "Clean the living room",
+    description: "Vacuum the carpet, dust the shelves"
+  ) {
+    todo {
+      id
+      title
+      description
+      done
+    }
+  }
+}
+
+mutation deleteTodo {
+  deleteTodo(id: 1) {
+    success
+  }
+}
